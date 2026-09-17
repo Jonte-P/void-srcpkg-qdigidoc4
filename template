@@ -18,7 +18,7 @@ makedepends="libdigidocpp-devel
  openssl-devel
  zlib-devel"
 
-depends="opensc pcsclite"
+depends="opensc opensc-pkcs11 pcsclite"
 
 short_desc="DigiDoc4 client for digital signing and encryption"
 maintainer="Jonte Puide <YOUR-EMAIL>"
