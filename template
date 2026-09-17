@@ -1,0 +1,28 @@
+# Template file for 'qdigidoc4'
+pkgname=qdigidoc4
+version=4.10.0
+revision=1
+build_style=cmake
+
+configure_args="-DENABLE_KDE=OFF
+ -DENABLE_NAUTILUS_EXTENSION=OFF"
+
+hostmakedepends="pkg-config gettext qt6-base qt6-tools"
+
+makedepends="libdigidocpp-devel
+ qt6-base-devel
+ qt6-svg-devel
+ pcsclite-devel
+ libldap-devel
+ flatbuffers-devel
+ openssl-devel
+ zlib-devel"
+
+depends="opensc pcsclite"
+
+short_desc="DigiDoc4 client for digital signing and encryption"
+maintainer="Jonte Puide <YOUR-EMAIL>"
+license="LGPL-2.1-or-later"
+homepage="https://github.com/open-eid/DigiDoc4-Client"
+distfiles="https://github.com/open-eid/DigiDoc4-Client/releases/download/v${version}/qdigidoc4-${version}.tar.gz"
+checksum=369c68d7a7ad4c55d57110be6f9cc7df49ff4e06a4f910e673bd8b5f3e2226c8
